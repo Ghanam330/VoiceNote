@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.margarita.voicenotes">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".NoteApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.CategoryListActivity"
+            android:label="@string/all_categories"
+            android:parentActivityName=".ui.activities.MainActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activities.MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".ui.activities.creation.category.NewCategoryActivity"
+            android:label="@string/new_category"
+            android:parentActivityName=".ui.activities.MainActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.creation.category.EditCategoryActivity"
+
+            android:parentActivityName=".ui.activities.MainActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.creation.note.NewNoteActivity"
+            android:label="@string/new_note"
+            android:parentActivityName=".ui.activities.MainActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.creation.note.NewPhotoNoteActivity"
+            android:label="@string/new_note"
+            android:parentActivityName=".ui.activities.MainActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.creation.note.EditNoteActivity"
+
+            android:parentActivityName=".ui.activities.MainActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.info.ViewNoteActivity"
+            android:label="@string/note_info"
+            android:parentActivityName=".ui.activities.MainActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activities.info.ViewPhotoActivity"
+            android:label="@string/photo_fullscreen"
+            android:parentActivityName=".ui.activities.info.ViewNoteActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activities.info.ViewNoteActivity" />
+        </activity>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.margarita.voicenotes.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

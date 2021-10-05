@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/list_content" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fabMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/margin16"
+        style="@style/MenuMainButtonStyle">
+
+        <!-- To set icons for a custom FAB, we must use attribute
+            android:src, despite the AndroidStudio warnings! -->
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabNewNote"
+            style="@style/MenuButtonsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mic_white_24dp"
+            app:fab_label="@string/fab_create_note" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabNewPhoto"
+            style="@style/MenuButtonsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_a_photo_white_24dp"
+            app:fab_label="@string/fab_take_photo" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabNewCategory"
+            style="@style/MenuButtonsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_book_white_24dp"
+            app:fab_label="@string/fab_create_category" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<resources>
+    <!-- Labels for activities -->
+    <string name="app_name">VoiceNotes</string>
+    <string name="new_note">New note</string>
+    <string name="new_category">New category</string>
+    <string name="all_categories">All categories</string>
+    <string name="note_info">Note info</string>
+    <string name="photo_fullscreen">Full photo</string>
+
+    <!-- Errors -->
+    <string name="speech_not_supported">Your device does not support speech input</string>
+    <string name="note_empty">Note must contain a text or a photo!</string>
+    <string name="category_empty">Category can not be empty!</string>
+    <string name="category_exists">Category with this name was created earlier!</string>
+    <string name="image_loading_error">Image loading error!</string>
+
+    <!-- Intents -->
+    <string name="note_intent">Note</string>
+    <string name="category_intent">Category</string>
+    <string name="photo_intent">Photo full screen</string>
+
+    <!-- None items -->
+    <string name="none_note">No text</string>
+    <string name="none_category">No category</string>
+    <string name="none_photo">No photo</string>
+
+    <!-- Tags for fragments -->
+    <string name="fragment_new_note">FRAGMENT_NEW_NOTE</string>
+
+    <!-- Message for a class cast exception -->
+    <string name="class_cast"> must implement %1$s interface</string>
+
+    <!-- FAB menu -->
+    <string name="fab_create_note">Create a voice note</string>
+    <string name="fab_take_photo">Take a photo</string>
+    <string name="fab_create_category">Create a new category</string>
+
+    <!-- Dialog for delete confirmation -->
+    <string name="confirm_title">Confirmation</string>
+    <string name="confirm_delete_notes">Are you sure you want delete chosen notes?</string>
+    <string name="confirm_delete_categories">Are you sure you want delete chosen categories?</string>
+    <string name="confirm_cancel_note_create">Are you sure you want to cancel a note creation?</string>
+    <string name="confirm_cancel_edit">Save changes?</string>
+    <string name="confirm_delete_note_photo">Delete this photo?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="categories_deleted">Chosen categories were deleted</string>
+    <string name="notes_deleted">Chosen notes were deleted</string>
+
+    <!-- Titles for action mode -->
+    <string name="selected_item">1 selected</string>
+    <string name="selected_notes">Selected %1$d notes</string>
+    <string name="selected_categories">Selected %1$d categories</string>
+
+    <!-- Titles for notes and categories -->
+    <string name="create_note">Say something interesting!</string>
+    <string name="create_category">Say the name of category</string>
+
+    <string name="note_text">Note text</string>
+    <string name="category_name">Name of category</string>
+
+    <string name="note_created">New note was created</string>
+    <string name="category_created">New category was created</string>
+
+    <string name="note_edited">Note was edited</string>
+    <string name="category_edited">Category was edited</string>
+
+    <!-- Messages for empty lists -->
+    <string name="empty_note_list">The note list is empty</string>
+    <string name="empty_category_list">The category list is empty</string>
+
+    <!-- Messages -->
+    <string name="tap_on_mic">Tap on mic to speak</string>
+    <string name="speak">Speak</string>
+    <string name="category">Category</string>
+    <string name="show_categories">Show categories</string>
+    <string name="choose_category">Choose category</string>
+    <string name="date">Date</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="crop_image">Crop image</string>
+    <string name="delete_image">Delete image</string>
+    <string name="photo">Photo</string>
+    <string name="set_photo">Set photo…</string>
+    <string name="take_a_photo">Take a photo</string>
+    <string name="choose_photo">Choose photo from the file system</string>
+    <string name="select_all">Select all</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+</resources>
